@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Africa EPU Index — CAPE Economic Research &amp; Consulting</title>
+<meta name="description" content="How CAPE built the first newspaper-based Economic Policy Uncertainty index covering all 54 African countries, in 15 languages, from 21.5 million articles.">
+<link rel="icon" href="assets/img/cape-logo.png">
+<meta property="og:title" content="The Africa EPU Index — reading uncertainty in the continent's own press">
+<meta property="og:description" content="54 countries. 15 languages. 21.5 million articles. The first economic policy uncertainty index built from Africa's own national newspapers.">
+<meta property="og:image" content="assets/img/cape-logo.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="site-nav">
+    <div class="brand">
+      <img class="logo" src="assets/img/cape-logo.png" alt="CAPE Economic Research &amp; Consulting">
+    </div>
+    <nav>
+      <a href="#why">Why it exists</a>
+      <a href="#inside">Inside the index</a>
+      <a href="#trust">Built to be trusted</a>
+      <a href="#family">The index family</a>
+    </nav>
+    <span class="vintage-pill">Vintage 2026&#8209;09</span>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================= HERO ============================= -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">Africa EPU Index · CAPE Economic Research &amp; Consulting</p>
+      <h1>Africa's press already reports when policy uncertainty is rising. We taught a machine to read it — in 15 languages, every month, since 2015.</h1>
+      <p class="lede">The CAPE Africa Economic Policy Uncertainty Index turns 21.5&nbsp;million newspaper articles from all 54 African countries into a single, comparable monthly signal — the first index of its kind built entirely from the continent's own national press, read in its own languages.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#inside">See how it's built</a>
+        <a class="btn btn-ghost" href="methodology/Africa_EPU_Index_Methodology_and_Data.pdf">Read the full methodology (PDF)</a>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat-tile"><div class="value">54</div><div class="label">countries, every one</div></div>
+        <div class="stat-tile"><div class="value">15</div><div class="label">languages scored</div></div>
+        <div class="stat-tile"><div class="value">141</div><div class="label">months, Jan 2015–Sep 2026</div></div>
+        <div class="stat-tile"><div class="value">21.5M</div><div class="label">articles classified</div></div>
+        <div class="stat-tile"><div class="value">262</div><div class="label">newspapers scored monthly</div></div>
+        <div class="stat-tile"><div class="value">851</div><div class="label">sources vetted to get there</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= WHY ============================= -->
+  <section id="why">
+    <div class="wrap prose">
+      <p class="eyebrow">Why this exists</p>
+      <h2>Uncertainty is a tax nobody collects — and almost nobody in Africa was measuring it.</h2>
+      <p class="section-intro">When firms and households don't know who will set policy, or what it will be, they do the rational thing: they wait. Investment stalls, hiring freezes, big purchases get postponed (Bloom, 2009). That hesitation is real and costly — but because uncertainty isn't a line item in any national account, it has to be measured indirectly, through what gets written about it.</p>
+
+      <blockquote class="pull">
+        "The World Uncertainty Index covers Africa — but from quarterly EIU country reports, not from a single page of local news."
+      </blockquote>
+
+      <p>Baker, Bloom and Davis (2016) pioneered the fix: count how often the press writes about the economy, policy and uncertainty in the same breath. Their method has since been built for more than 20 economies — almost all of them advanced. Africa's uncertainty runs on a different clock: election cycles, abrupt regulatory change, exchange-rate regimes, debt distress, commodity shocks. Those events are reported first, and in the most detail, by the <em>national</em> press — often in French, Arabic or Portuguese, not English.</p>
+
+      <div class="card-grid">
+        <div class="card"><div class="num">1</div><h3>Language</h3><p>A dictionary per country, written in up to three of 15 languages — francophone, lusophone and Arabic-language papers are read in their own words, not translated.</p></div>
+        <div class="card"><div class="num">2</div><h3>Coverage</h3><p>National online newspapers collected for every country, including fragile and low-coverage states that most indices skip entirely.</p></div>
+        <div class="card"><div class="num">3</div><h3>Frozen baseline</h3><p>Each country's scaling is fixed over Jan 2015–Dec 2025. New months score against that fixed reference and never rewrite history.</p></div>
+        <div class="card"><div class="num">4</div><h3>Aggregation</h3><p>Regional and Africa-wide series are GDP-PPP-weighted averages of country z-scores — comparable across economies of wildly different size.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= SCALE / INSIDE ============================= -->
+  <section id="inside" class="alt">
+    <div class="wrap">
+      <p class="eyebrow">Inside the index</p>
+      <h2>Two curated registries, 851 candidate newspapers, 262 that made the cut.</h2>
+      <p class="section-intro">Every country gets up to six newspapers, selected by article volume. West Africa alone — Nigeria and Ghana's dense online press in particular — accounts for nearly half the registry and more than half of every classified article.</p>
+
+      <div class="viz-root">
+        <div class="viz-head">
+          <div>
+            <p class="viz-title">Registered vs. selected sources, by region</p>
+            <p class="viz-sub">851 newspapers were vetted across the continent; 262 were selected by article volume to actually feed the index — up to six per country.</p>
+          </div>
+          <div class="viz-legend">
+            <span class="key"><span class="swatch" style="background:var(--series-1)"></span>Registered</span>
+            <span class="key"><span class="swatch" style="background:var(--series-2)"></span>Selected</span>
+          </div>
+        </div>
+        <div id="chart-sources"></div>
+      </div>
+
+      <div class="viz-root">
+        <div class="viz-head">
+          <div>
+            <p class="viz-title">Classified articles by region</p>
+            <p class="viz-sub">21.5 million articles from the selected sources, March–April 2026 archive summary. West Africa's online press alone contributes 12.3 million.</p>
+          </div>
+        </div>
+        <div id="chart-articles"></div>
+      </div>
+
+      <p class="prose">This isn't evenly distributed by design — it's evenly distributed by <em>method</em>. Every country gets the same treatment: the same selection rule, the same classification logic, the same frozen baseline. The volume differences you see above are a fact about Africa's online press, not an artifact of how the index was built.</p>
+    </div>
+  </section>
+
+  <!-- ============================= CLASSIFICATION ============================= -->
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">How an article gets counted</p>
+      <h2>Not a sentiment score. A simple, strict rule: all three, or it doesn't count.</h2>
+      <p class="section-intro">An article is an EPU article only if its title or body contains at least one term from <strong>each</strong> of three dictionaries — Economic, Policy and Uncertainty. No partial credit, no weighting by how many terms appear. One article, one vote: 0 or 1.</p>
+
+      <div class="viz-root">
+        <div class="classify">
+          <div class="chips">
+            <div class="chip-group">
+              <div class="chip-title"><span class="dot" style="background:var(--series-1)"></span>Economic — at least 1 of these</div>
+              <div class="terms"><span>economy</span><span>GDP</span><span>inflation</span><span>investment</span><span>fiscal deficit</span><span>exchange rate</span><span>economic growth</span></div>
+            </div>
+            <div class="chip-group">
+              <div class="chip-title"><span class="dot" style="background:var(--series-2)"></span>Policy — at least 1 of these</div>
+              <div class="terms"><span>fiscal policy</span><span>monetary policy</span><span>regulation</span><span>legislation</span><span>ministry of finance</span><span>government decree</span><span>tax reform</span></div>
+            </div>
+            <div class="chip-group">
+              <div class="chip-title"><span class="dot" style="background:var(--series-3)"></span>Uncertainty — at least 1 of these</div>
+              <div class="terms"><span>uncertainty</span><span>uncertain</span><span>unstable</span><span>unpredictable</span><span>risk</span><span>volatile</span><span>crisis</span></div>
+            </div>
+          </div>
+          <div class="op">AND</div>
+          <div class="result">
+            <div class="big">EPU = 1</div>
+            <div class="cap">Classified as an economic policy uncertainty article</div>
+          </div>
+        </div>
+        <p class="viz-sub" style="margin-top:16px;">English examples shown. Each country dictionary also carries local terms — currency names like <em>naira</em>, national institutions, and the French, Arabic or Portuguese equivalents (<em>PIB</em>, <em>économie</em>, <em>taux de change</em>…) where relevant. A term belongs to exactly one component, so a single phrase can never satisfy two conditions at once.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= LANGUAGE DEPTH ============================= -->
+  <section class="alt">
+    <div class="wrap">
+      <p class="eyebrow">Reading the news in its own language</p>
+      <h2>A Moroccan dictionary isn't a translated Nigerian one. It's nine times bigger.</h2>
+      <p class="section-intro">Dictionary size tracks how many languages a country's press actually uses. English-only markets run lean, ten to twenty terms per component. Markets covered in Arabic and French — Morocco, Tunisia — carry dictionaries an order of magnitude larger, because the same idea gets a full entry in every language it's reported in.</p>
+
+      <div class="viz-root">
+        <div class="viz-head">
+          <div>
+            <p class="viz-title">Dictionary term counts: multilingual vs. English-only markets</p>
+            <p class="viz-sub">Morocco and Tunisia are scored in English, French and Arabic. The hatched bar is the approximate range the source document reports collectively for Nigeria, Ghana and Zambia — shown as a range, not invented per-country figures.</p>
+          </div>
+          <div class="viz-legend">
+            <span class="key"><span class="swatch" style="background:var(--series-1)"></span>Morocco</span>
+            <span class="key"><span class="swatch" style="background:var(--series-3)"></span>Tunisia</span>
+            <span class="key"><span class="swatch" style="background:repeating-linear-gradient(135deg,var(--text-muted) 0 2px,transparent 2px 5px);opacity:.7"></span>English-only (approx. range)</span>
+          </div>
+        </div>
+        <div id="chart-dictdepth"></div>
+      </div>
+
+      <div class="viz-root">
+        <div class="viz-head">
+          <div>
+            <p class="viz-title">Language vocabularies, by number of countries</p>
+            <p class="viz-sub">Fifteen language vocabularies feed the dictionaries. Every one of the 54 countries is scored in English; 27 add French, 13 add Arabic, 6 add Portuguese. Nine languages — from Amharic to Zulu — serve a single country each.</p>
+          </div>
+        </div>
+        <div id="chart-languages"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= AGGREGATION / PIPELINE ============================= -->
+  <section id="trust">
+    <div class="wrap">
+      <p class="eyebrow">From article counts to an index</p>
+      <h2>Four steps turn raw counts into a number you can compare across 54 very different economies.</h2>
+      <p class="section-intro">A country's raw EPU article share is standardised into a z-score against its own history, then combined into regional and Africa-wide series using GDP-at-PPP weights — so Nigeria's economy carries Nigeria's weight, and a small, volatile series like Gabon's can't swing a regional average through scale alone.</p>
+
+      <div class="pipeline">
+        <div class="pipe-step">
+          <span class="n">1</span>
+          <h4>Standardise</h4>
+          <p>Each country's index is converted to a z-score using <code>its own</code> baseline mean and standard deviation, Jan 2015–Dec 2025.</p>
+          <span class="pipe-arrow">&rarr;</span>
+        </div>
+        <div class="pipe-step">
+          <span class="n">2</span>
+          <h4>Weight by GDP</h4>
+          <p>Within each region, every country's weight is its monthly share of regional GDP at purchasing-power parity.</p>
+          <span class="pipe-arrow">&rarr;</span>
+        </div>
+        <div class="pipe-step">
+          <span class="n">3</span>
+          <h4>Average</h4>
+          <p>Country z-scores are combined into a single weighted regional (or Africa-wide) z-score for that month.</p>
+          <span class="pipe-arrow">&rarr;</span>
+        </div>
+        <div class="pipe-step">
+          <span class="n">4</span>
+          <h4>Rescale</h4>
+          <p>The regional series is standardised again against its own baseline and mapped to mean&nbsp;100, standard deviation&nbsp;10.</p>
+        </div>
+      </div>
+      <p class="prose" style="margin-top:22px;">The Africa-wide index is <strong>not</strong> an average of the five regional indices — it runs the same four steps directly across all 54 countries, weighted by each country's share of Africa's total GDP.</p>
+    </div>
+  </section>
+
+  <!-- ============================= FROZEN BASELINE ============================= -->
+  <section class="alt">
+    <div class="wrap">
+      <p class="eyebrow">Built to be trusted</p>
+      <h2>History doesn't move. Once a month is scored, it's scored for good.</h2>
+      <p class="section-intro">Most news-based indices recalibrate as new data arrives, which means last year's value for "last March" can quietly change today. CAPE's baseline is frozen at December 2025: every month from January 2026 onward is measured against that fixed reference, so a chart you save today still matches the chart you'd pull a year from now.</p>
+
+      <div class="viz-root">
+        <div class="viz-head">
+          <div>
+            <p class="viz-title">The frozen baseline, on the calendar</p>
+            <p class="viz-sub">132 months set each country's scaling once. Every month after that — the live window — is scored against it, never recalibrated.</p>
+          </div>
+        </div>
+        <div id="chart-timeline"></div>
+      </div>
+
+      <div class="callout-grid">
+        <div class="callout"><b>Two missing months, disclosed</b>No readable articles were found for São Tomé &amp; Príncipe (Jul 2026) or Seychelles (Oct 2018, Mar 2019) — the file has 7,611 rows, not the full 7,614, and says so.</div>
+        <div class="callout"><b>A known 2-source gap</b>The regional summary counts 264 selected sources against 262 in the selection file. The document flags the discrepancy as unreconciled rather than papering over it.</div>
+        <div class="callout"><b>Not the same as AERI</b>CAPE's Africa Economic Risk Index grades risk content across eight pillars and doesn't require all three EPU components together. The two can move together, but their levels aren't comparable.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= COMPOSITION ============================= -->
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Who's in the average</p>
+      <h2>Five regions, CAPE's own grouping — built for how African economies actually trade and move together.</h2>
+      <p class="section-intro">The regional split isn't the UN geoscheme. Madagascar, Mauritius, Malawi, Angola and São Tomé &amp; Príncipe sit in Southern Africa here; Comoros, Seychelles and Sudan sit in East Africa — grouped to track the economic blocs the index is meant to serve.</p>
+
+      <div class="viz-root">
+        <div class="viz-head">
+          <div>
+            <p class="viz-title">All 54 countries, by region</p>
+          </div>
+        </div>
+        <div id="chart-composition"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= COMPARISON TABLE ============================= -->
+  <section class="alt">
+    <div class="wrap">
+      <p class="eyebrow">How it compares</p>
+      <h2>Three ways to read uncertainty. Only one reads Africa's own newsprint, every month.</h2>
+      <div class="scroll-x">
+        <table class="cmp-table">
+          <thead>
+            <tr><th>Approach</th><th>Source material</th><th>African coverage</th><th>Frequency</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="hl">World Uncertainty Index</td><td>Quarterly EIU country reports</td><td>Partial, same template as every other region</td><td>Quarterly</td></tr>
+            <tr><td class="hl">Country-level EPU studies</td><td>Single-country news (e.g. Nigeria)</td><td>One country at a time, no common method</td><td>Varies</td></tr>
+            <tr><td class="hl">CAPE Africa EPU Index</td><td>National online newspapers, local languages</td><td>All 54 countries, one consistent method</td><td>Monthly</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="prose" style="margin-top:20px;">News-based uncertainty measures have already shown they can forecast exchange-rate and stock-market volatility at the country level (Laniran, 2018; Laniran &amp; Omeje, 2021; Salisu et al., 2023 for Nigeria). CAPE's index is the first attempt to run that same logic, consistently, across the whole continent.</p>
+    </div>
+  </section>
+
+  <!-- ============================= SISTER INDICES ============================= -->
+  <section id="family">
+    <div class="wrap">
+      <p class="eyebrow">The index family</p>
+      <h2>Same archive, different question.</h2>
+      <p class="section-intro">EPU, ETU, TPU and EgPU are all built from the same 31.4-million-article archive and the same per-country dictionaries — only the keyword rules that define each component change.</p>
+
+      <div class="sister-row">
+        <div class="sister-card active">
+          <span class="tag" style="background:color-mix(in srgb, var(--series-1) 18%, transparent); color:var(--series-1)">EPU</span>
+          <h3>Economic Policy Uncertainty</h3>
+          <p>Economic × Policy × Uncertainty, together in one article. The index this page is about.</p>
+        </div>
+        <div class="sister-card">
+          <span class="tag" style="background:color-mix(in srgb, var(--series-3) 18%, transparent); color:var(--series-3)">ETU</span>
+          <h3>Economic Trade Uncertainty</h3>
+          <p>Swaps Policy for Trade terms — tariffs, trade agreements, export restrictions.</p>
+        </div>
+        <div class="sister-card">
+          <span class="tag" style="background:color-mix(in srgb, var(--series-7) 18%, transparent); color:var(--series-7)">TPU</span>
+          <h3>Trade Policy Uncertainty</h3>
+          <p>Trade × Policy × Uncertainty — regulatory risk specifically around trade.</p>
+        </div>
+        <div class="sister-card">
+          <span class="tag" style="background:color-mix(in srgb, var(--series-2) 18%, transparent); color:var(--series-2)">EgPU</span>
+          <h3>Energy Policy Uncertainty</h3>
+          <p>The same method, pointed at energy markets and regulation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= CLOSING ============================= -->
+  <section class="alt">
+    <div class="wrap prose" style="text-align:left;">
+      <p class="eyebrow">Get the data</p>
+      <h2>Monthly country, regional and Africa-wide series — with the methodology that produced them.</h2>
+      <p class="section-intro">Country files (<code>epu_index_long.csv</code> / <code>epu_index_wide.csv</code>), five regional aggregates and one Africa-wide series are produced every month, each with the weights and country coverage disclosed alongside it.</p>
+      <div class="cta-row" style="margin-top:8px;">
+        <a class="btn btn-primary" href="methodology/Africa_EPU_Index_Methodology_and_Data.pdf">Download the methodology (PDF)</a>
+        <a class="btn btn-ghost" href="https://github.com/CAPE-ERC/CAPE-ERC-EPU-Index">View the repository</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap foot-grid">
+    <div>
+      <img class="logo" src="assets/img/cape-logo.png" alt="CAPE Economic Research &amp; Consulting" style="height:30px;margin-bottom:14px;">
+      <p style="max-width:34ch; color:var(--text-secondary); font-size:13.5px;">Newspaper-based economic indicators for Africa, built country by country, in the continent's own languages.</p>
+    </div>
+    <div>
+      <h4>Index</h4>
+      <ul>
+        <li><a href="#why">Why it exists</a></li>
+        <li><a href="#inside">Inside the index</a></li>
+        <li><a href="#trust">Built to be trusted</a></li>
+        <li><a href="#family">The index family</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>References</h4>
+      <ul>
+        <li>Baker, Bloom &amp; Davis (2016), QJE 131(4)</li>
+        <li>Bloom (2009), Econometrica 77(3)</li>
+        <li>Ahir, Bloom &amp; Furceri (2022), NBER WP 29763</li>
+        <li>Laniran (2018); Laniran &amp; Omeje (2021); Salisu et al. (2023)</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-meta">
+    <span>&copy; CAPE Economic Research &amp; Consulting</span>
+    <span>Methodology vintage 2026&#8209;09 · Sample Jan 2015–Sep 2026 · Baseline frozen Dec 2025</span>
+  </div>
+</footer>
+
+<script src="assets/js/charts.js"></script>
+</body>
+</html>
